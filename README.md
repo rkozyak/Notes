@@ -1,4 +1,4 @@
-# Latex-Notes
+# Notes
 ## Introduction
 Here are my notes for some of the courses I've taken. These were written with :heart: using LaTeX.
 
