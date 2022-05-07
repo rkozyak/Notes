@@ -3,37 +3,47 @@
 
 % Overview
 \subsection{Overview}
-In pure translational motion, all points on an object travel on parallel paths. The most general motion is a combination of  translation and rotation. According to Newton’s second law, a net force causes an object to have an acceleration.
+In pure translational motion, all points on an object travel on parallel paths. The most general motion is a combination of translation and rotation. According to Newton’s second law, a net force causes an object to have an acceleration.
 
 % Torque
 \subsection{Torque}
 The amount of torque depends on where and in what direction the force is applied, as well as the location of the axis of rotation. Torque is positive when the force tends to produce a counterclockwise rotation about the axis. \newline \newline
 \centering
 Magnitude of Torque = (Magnitude of the force) x (Lever arm)	
-\[\tau=F\ell\]
+\[\tau=F\ell\sin\theta\]
+\[\tau=Fr\sin\theta\]
 \raggedright 
 
 % Rigid Objects in Equilibrium
 \subsection{Rigid Objects in Equilibrium}
-A rigid body is in equilibrium if it has zero translational  acceleration and zero angular acceleration. In equilibrium,  the sum of the externally applied forces is zero, and the  sum of the externally applied torques is zero.
+A rigid body is in equilibrium if it has zero translational acceleration and zero angular acceleration. In equilibrium,  the sum of the externally applied forces is zero, and the sum of the externally applied torques is zero.
 
-\[\sum\tau=F_2\ell _2-W\ell _W = 0\]
+% Put on same line
+\[\sum F_x=0\]
+\[\sum F_y=0\]
+\[\sum\tau=0\]
 
-\[\sum F_y=-F_1+F_2-W=0\]
+% Axis of Rotation
+\subsection{Axis of Rotation}
+If an object is in equilibrium, it does not matter where you put the axis of rotation for calculating the net torque. The location of the axis of rotation is completely arbitrary and often the nature of the problem will suggest a convenient location for the axis. When solving a problem like this, you must \emph{must} specify an axis of rotation.
 
-\[\sum\tau=-W_a\ell _a-W_d\ell _d+M\ell _M= 0\]
+%\[\sum\tau=F_2\ell _2-W\ell _W = 0\]
+%\[\sum F_y=-F_1+F_2-W=0\]
+%\[\sum\tau=-W_a\ell _a-W_d\ell _d+M\ell _M= 0\]
 
 % Center of Gravity
 \subsection{Center of Gravity}
 The center of gravity of a rigid body is the point at which its weight can be considered to act when the torque due to the weight is being calculated. 
 
-\[x_{cg}=\frac{W_1x_1+W_2x_2+\ell}{W_1+W_2+\ell}\]
+%\[x_{cg}=\frac{W_1x_1+W_2x_2+\ldots}{W_1+W_2+\ldots}\]
+\[x_{cg}=\frac{\sum m_ix_i}{\sum m_i}\]
+\[y_{cg}=\frac{\sum m_iy_i}{\sum m_i}\]
+
+The center of gravity of a homogenous. A symmetric body must lie on the axis of symmetry. Often, the center of gravity of such an object is the geometric center of the object. 
 
 % Newton’s Second Law for Rotational Motion About a Fixed Axis
 \subsection{Newton’s Second Law for Rotational Motion About a Fixed Axis}
 \[F_T=ma_t\]
-\[\tau=F_tr\]
-\[a_t=r\alpha\]
 \[\tau=(mr^2)\alpha\]
 \[\sum\tau=\sum(mr^2)\alpha\]
 
@@ -41,30 +51,41 @@ The center of gravity of a rigid body is the point at which its weight can be co
 \subsection{Net External Torque}
 \[\sum\tau=I\alpha\]
 \[I=\sum(mr^2)\]
-\[I=\sum(mr^2)=m_1r_1^2+m_2r_2^2=m(L/2)^2+m(L/2)^2\]
 \[I=\frac{1}{2}mL^2\]
 
 % Rotational Work and Energy
 \subsection{Rotational Work and Energy}
 \[W=Fs=Fr\theta\]
 \[W=\tau\theta\]
-Rotational work is done by a constant torque in turning an object though an angle $W_r=\tau\theta$
+Rotational work is done by a constant torque in turning an object through an angle $W_r=\tau\theta$
 
-\[KE=\frac{1}{2}mv_T^2=\frac{1}{2}mr^2\omega^2\]
-\[v_t=r\omega\]
-\[KE=\sum\frac{1}{2}mr^2\omega^2=\frac{1}{2}I\omega^2\]
-
-%Rotational Kinetic Energy
-\subsection{Rotational Kinetic Energy}
-The rotational kinetic engery of a rigid rotation object is $KE_R=\frac{1}{2}I\omega^2$
-\[E=\frac{1}{2}mv^2+\frac{1}{2}I\omega^2+mgh\]
-\[\frac{1}{2}mv_f^2+\frac{1}{2}I\omega^2_f=mgh_i\]
-\[\omega _f=v_f/r\]
-\[\frac{1}{2}mv^2_f+\frac{1}{2}Iv^2_f/r^2=mgh_i\]
-\[v_f=\sqrt{\frac{2mgh_o}{m+\frac{I}{r^2}}}\]
+\[KE_R=\frac{1}{2}mr^2\omega^2\]
+\[KE_R=\frac{1}{2}I\omega^2\]
 
 % Angular Momentum
 \subsection{Angular Momentum}
 The angular Momentum $L$ of a body rotating about a fixed axis is the product of the body's moment of inertia and its angular velocity with respect to that axis: \[L=I\omega\]
 
-The angular momentum of a system remains constant if the net external torque acting on the system is zero.
+The angular momentum of a system remains constant if the net external torque acting on the system is zero. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Rotational Kinetic Energy
+\subsection{Rotational Kinetic Energy}
+The rotational kinetic energy of a rigid rotation object is $KE_R=\frac{1}{2}I\omega^2$
+\[E=\frac{1}{2}mv^2+\frac{1}{2}I\omega^2+mgh\]
+\[\frac{1}{2}mv_f^2+\frac{1}{2}I\omega^2_f=mgh_i\]
+\[\omega _f=v_f/r\]
+\[\frac{1}{2}mv^2_f+\frac{1}{2}Iv^2_f/r^2=mgh_i\]
+\[v_f=\sqrt{\frac{2mgh_o}{m+\frac{I}{r^2}}}\]
