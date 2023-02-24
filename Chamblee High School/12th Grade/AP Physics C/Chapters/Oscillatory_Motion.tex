@@ -1,0 +1,138 @@
+% Oscillatory Motion
+\section{Oscillatory Motion}
+
+\subsection{Periodic Motion}
+\textbf{Periodic motion} is motion of an object that regularly returns to its given position after a fixed time interval. \\
+
+A special kind of periodic motion occurs in mechanical systems when the force acting on the object is proportional to the position of the object relative to some equilibrium position. \\
+
+If the force is always directed toward the equilibrium position, the motion is called \textbf{simple harmonic motion}.
+
+% Motion of a Spring Mass System
+\subsection{Motion of a Spring Mass System}
+A block of mass m is attached to a spring and the block is free to move on a frictionless horizontal surface. When the spring is neither stretched nor compressed, the block is at the equilibrium position.
+
+% Hooke's Law
+\subsection{Hooke's Law}
+\[F_x=-kx\]
+\begin{itemize}
+	\item $F_x$ is the restoring force and is always directed toward the equilibrium position and opposite the displacement from equilibrium.
+	\item $k$ is the spring constant
+	\item $x$ is the displacment
+
+\end{itemize}
+
+% Acceleration
+\subsection{Acceleration}
+\[a_x=\frac{k}{m}x\]
+
+The acceleration is proportional to the displacement of the block and the direction of the acceleration is opposite the direction of the displacement from equilibrium. 
+
+The acceleration is not constant. When the block passes though the equilibrium position, a=0. The block continues to $x=-A$ where its acceleration is $+KA/m$
+
+% Mathematical Representation of Simple Harmonic Motion
+\subsection{Mathematical Representation of Simple Harmonic Motion}
+\begin{itemize}
+	\item Acceleration $a=\frac{d^2x}{dt^2}=-\frac{k}{m}x$
+	\item We let $\omega^2=\frac{k}{m}$
+	\item Then a = $-\omega^2x$
+\end{itemize}
+
+% Graphical Representation of Simple Harmonic Motion
+\subsection{Graphical Representation of Simple Harmonic Motion}
+A cosine curve can be used to give physical significance to these constants
+
+\[x(t)=A\cos (\omega t+\phi)\]
+
+\begin{itemize}
+	\item $A$ is the amplitude of the motion
+	\item $\omega$ is called the angular frequency and is in rad/s
+	\item $\phi$ is the phase constant or the initial phase angle
+\end{itemize}
+
+$A$ and $\phi$ are determined uniquely at the position and the velocity of the particle at t=0
+\begin{itemize}
+	\item If the particle is at $x=A$ at $t=0$, then $\phi=0$
+	\item The phase of the motion is the quantity ($\omega t+\phi$)
+	\item $x(t)$ is the periodic and its value is the same each time $\omega t$ increase by $2\pi$ radians
+\end{itemize}
+
+% Period
+\subsection{Period}
+The period T is the time interval required for the particle to go through one full cycle of its motion
+\[T=\frac{2\pi}{\omega}\]
+
+% Frequency
+\subsection{Frequency}
+The frequency is the inverse of the period and represents the number of oscillations the particle undergoes per time interval.
+\[F=\frac{1}{T}=\frac{\omega}{2\pi}\]
+\[\omega=2\pi f=\frac{2\pi}{T}\]
+\[T=2\pi\sqrt{\frac{m}{k}}\]
+The frequency and period only depend on the mass of the particle and the force constant of the spring and do not depend on the parameters of motion.
+
+% Motion Equations for Simple Harmonic Motion
+\subsection{Motion Equations for Simple Harmonic Motion}
+\[x(t)=A\cos (\omega t+\phi)\]
+\[v=\frac{dx}{dt}=-\omega A\sin (\omega t + \phi)\]
+\[a=\frac{d^2x}{dt^2}=-\omega^2A\cos (\omega t+\phi)\]
+
+% Maximum Values of $v$ and $a$
+\subsection{Maximum Values of $v$ and $a$}
+Because the sine and cosine functions oscillate between $\pm$1, we can easily find the maximum values of velocity and acceleration for an object in SHM.
+\[v_{\text{max}}=\omega A=\sqrt{\frac{k}{m}}A\]
+\[a_{\text{max}}=\omega^2A=\frac{k}{m}A\]
+
+% Energy of the SHM Oscillator
+\subsection{Energy of the SHM Oscillator}
+\[K=\frac{1}{2}mv52+\frac{1}{2}m\omega^2A^2\sin^2(\omega t +\phi)\]
+\[U=\frac{1}{2}kx^2=\frac{1}{2}kA^2\cos^2(\omega t+\phi)\]
+\[E=K+U=\frac{1}{2}kA^2\]
+
+Energy can also be used to find velocity: 
+\[v=\pm \sqrt{\frac{k}{m}(A^2-x^2)}=\pm \omega^2\sqrt{A^2-x^2}\]
+
+% Simple Pendulum
+\subsection{Simple Pendulum}
+A simple pendulum also exhibits periodic motion. The motion occurs in the vertical plane and is drive by gravitational force and is very close to that of the SHM oscillator if the angle is less than 10 degrees\\
+
+The forces acting on the object are the tension and the weight. $T$ is the force exerted on the bob by the string and $mg$ is the gravitational force. The tangential component of the gravitational force is a restoring force.
+
+\begin{center}
+	In the tangential direction: 
+	\[F_t=-mg\sin\theta=m\frac{d^2s}{dt^2}\]
+	
+	The length, $L$, of the pendulum is constant and for small values of $\theta$:
+	\[\frac{d^2\theta}{dt^2}=\frac{-g}{L}\sin\theta=\theta\]
+	
+	\[\theta=\theta_{max}\cos(\omega t+\phi)\]
+	
+	The angular frquency is:
+	\[w=\sqrt{\frac{g}{L}}\]
+	
+	The period is:
+	\[T=\frac{2\pi}{\omega}=2\pi \sqrt{\frac{L}{g}}\]
+\end{center}
+
+% Physical Pendulum
+\subsection{Physical Pendulum}
+If a hanging object oscillates about a fixed axis that does not pass through the center of mass and the object cannot be approximated as a particle, the system is called a \textbf{physical pendulum}.
+\[-mgf\sin\theta=I\frac{d^2\theta}{dt^2}\]
+Assuming $\theta$ is small, this becomes:
+\[\frac{d^2\theta}{dt^2}=-\theta\frac{mgd}{I}=\omega^2\theta\]
+
+The angular frequency is: $\omega=\sqrt{\frac{mgd}{I}}$
+
+The period is $T=\frac{2\pi}{\omega}=2\pi\sqrt{\frac{I}{mgd}}$
+
+% Torsional Pendulum
+\subsection{Torsional Pendulum}
+Assume a rigid object is suspended from a wire attached at its top to a fixed support. The twisted wire exerts a restoring torque on the object that is proportional to its angular position.
+The restoring torque is: $\tau=\kappa\theta$
+
+\begin{center}
+	Newton's Second Law gives:
+\end{center}
+\[\tau=\kappa\theta=I\frac{d^2\theta}{dt^2}\]
+\[\frac{d^2\theta}{dt^2}=-\frac{\kappa}{I}\theta\]
+
+
